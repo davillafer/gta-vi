@@ -1,0 +1,25 @@
+{
+  "name": "gta-vi",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "GTA VI fan site featuring scroll-driven GSAP animations and an SVG mask reveal effect, built with Astro and Tailwind CSS.",
+  "keywords": ["gta-vi", "gsap", "astro", "tailwindcss", "animation", "scroll-animation", "fan-site"],
+  "author": "davillafer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davillafer/gta-vi.git"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/vercel": "^8.1.5",
+    "@tailwindcss/vite": "^4.1.10",
+    "astro": "^5.9.3",
+    "gsap": "^3.13.0",
+    "tailwindcss": "^4.1.10"
+  }
+}

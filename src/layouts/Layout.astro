@@ -1,0 +1,41 @@
+---
+ import KeepScrolling from '@/assets/keep-scrolling.svg';
+import '@/styles/global.css';
+---
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content="GTA VI fan site featuring scroll-driven GSAP animations and an SVG mask reveal effect. Built with Astro and Tailwind CSS." />
+		<meta property="og:title" content="GTA VI" />
+		<meta property="og:description" content="Scroll-driven GSAP animations and SVG mask reveal effect." />
+		<meta property="og:image" content="https://gta-vi-olive.vercel.app/og-image.png" />
+		<meta property="og:url" content="https://gta-vi-olive.vercel.app/" />
+		<meta property="og:type" content="website" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="GTA VI" />
+		<meta name="twitter:description" content="Scroll-driven GSAP animations and SVG mask reveal effect." />
+		<meta name="twitter:image" content="https://gta-vi-olive.vercel.app/og-image.png" />
+		<title>GTA VI</title>
+	</head>
+	<body>
+		<slot />
+		<KeepScrolling class="fixed bottom-3 right-0 left-0 animate-bounce mx-auto" />
+	</body>
+</html>
+
+<style is:global>
+	html,
+	body {
+		margin: 0;
+		width: 100%;
+		background: #111;
+		color: white;
+		height: 300vh;
+		overflow-x: hidden;
+		overscroll-behavior: none;
+	}
+</style>
